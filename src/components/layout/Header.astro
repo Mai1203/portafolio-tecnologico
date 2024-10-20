@@ -3,22 +3,14 @@
 ---
 
 <header>
-	<nav>
-		<a href='/' aria-label='Brand'>Portafolio</a>
+  <nav>
+    <a href="/" aria-label="Brand">Portafolio</a>
 
-		<div>
-			<a
-				href='/blog'
-				aria-label='Nav Menu Item'
-				>Blog
-			</a>
-			<a
-				href='/tools'
-				aria-label='Nav Menu Item'
-				>Tools
-			</a>
+    <div>
+      <a href="/blog" aria-label="Nav Menu Item">Blog </a>
+      <a href="/tools" aria-label="Nav Menu Item">Tools </a>
 
-			<button id="toggleDarkMode">
+      <button id="toggleDarkMode">
         <!-- <span class="sr-only">Theme </span> -->
         <svg
           id="icon-sun"
@@ -46,135 +38,136 @@
           ></path>
         </svg>
       </button>
-		</div>
-	</nav>
+    </div>
+  </nav>
 </header>
 
 <script>
-  const toggleDarkMode = document.getElementById('toggleDarkMode');
-  const iconSun = document.getElementById('icon-sun');
-  const iconMoon = document.getElementById('icon-moon');
+  const toggleDarkMode = document.getElementById("toggleDarkMode");
+  const iconSun = document.getElementById("icon-sun");
+  const iconMoon = document.getElementById("icon-moon");
 
-  toggleDarkMode.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    
+  toggleDarkMode.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    const isDarkMode = document.body.classList.contains("dark-mode");
+
     if (isDarkMode) {
-      iconSun.classList.add('hidden');
-      iconMoon.classList.remove('hidden');
+      iconSun.classList.add("hidden");
+      iconMoon.classList.remove("hidden");
     } else {
-      iconSun.classList.remove('hidden');
-      iconMoon.classList.add('hidden');
+      iconSun.classList.remove("hidden");
+      iconMoon.classList.add("hidden");
     }
   });
 </script>
 
 <style>
-	header {
+  header {
     margin-top: 20px;
-  background-color: #fff;
-  box-shadow: -10px 10px 23px 0px rgba(0,0,0,0.75);
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-radius: 10px;
-}
+    background-color: #fff;
+    padding: 1rem;
+    /* position: sticky; */
+    top: 0;
+    z-index: 100;
+  }
 
-/* Navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Enlaces principales */
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  margin-right: 1rem;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #0077ff;
-}
-
-/* Contenedor de enlaces secundarios y botón */
-nav div {
-  display: flex;
-  align-items: center;
-}
-
-/* Botón de modo oscuro */
-.hidden {
-  display: none;
-}
-
-button#toggleDarkMode {
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-  background: none !important;
-  border: none !important;
-}
-
-button#toggleDarkMode svg {
-  cursor: pointer;
-  border: 1px solid #333;
-  border-radius: 50%;
-  padding: 2px;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-button#toggleDarkMode:hover svg {
-  transform: scale(1.1);
-}
-/* Versión para modo oscuro */
-body.dark-mode {
-  background-color: #1a1a1a;
-  color: #f4f4f4;
-}
-
-body.dark-mode header {
-  background-color: #333;
-}
-
-body.dark-mode nav a {
-  color: #f4f4f4;
-}
-
-body.dark-mode button#toggleDarkMode svg {
-  fill: #f4f4f4;
-}
-
-body.dark-mode button#toggleDarkMode {
-  color: white;
-}
-/* Responsive Design */
-@media (max-width: 768px) {
+  /* Navbar */
   nav {
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
-  nav div {
-    margin-top: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
+  /* Enlaces principales */
   nav a {
-    margin: 0.5rem 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    margin-right: 1rem;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #0077ff;
+  }
+
+  /* Contenedor de enlaces secundarios y botón */
+  nav div {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Botón de modo oscuro */
+  .hidden {
+    display: none;
   }
 
   button#toggleDarkMode {
-    margin-left: 0;
-    margin-top: 0.5rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    background: none !important;
+    border: none !important;
   }
-}
+
+  button#toggleDarkMode svg {
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 2px;
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
+  }
+
+  button#toggleDarkMode:hover svg {
+    transform: scale(1.1);
+  }
+  /* Versión para modo oscuro */
+  body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+  }
+
+  body.dark-mode header {
+    background-color: #333;
+  }
+
+  body.dark-mode nav a {
+    color: #f4f4f4;
+  }
+
+  body.dark-mode button#toggleDarkMode svg {
+    fill: #f4f4f4;
+  }
+
+  body.dark-mode button#toggleDarkMode {
+    color: white;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav div {
+      margin-top: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    nav a {
+      margin: 0.5rem 0;
+    }
+
+    button#toggleDarkMode {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  }
 </style>

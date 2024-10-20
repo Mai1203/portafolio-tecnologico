@@ -247,7 +247,7 @@
         "Next.js",
         "Aprendizaje"
       ],
-      "url": "https:odes"
+      "url": "https://github.com/Mai1203/nextjs-dashboard.git"
     },
     {
       "name": "API_CRUD",
@@ -258,7 +258,7 @@
         "MongoDB",
         "CRUD"
       ],
-      "url": "demos en linea"
+      "url": "https://github.com/Mai1203/API_CRUD"
     },
     {
       "name": "Tienda",
@@ -268,7 +268,7 @@
         "Node.js",
         "tienda"
       ],
-      "url": "demos en lineas://proyetosdesarrollo.dev"
+      "url": "https://github.com/Mai1203/tienda"
     },
     {
       "name": "heroes-app",
@@ -279,8 +279,44 @@
         "API",
         "React"
       ],
-      "url": "demos en lineas://codi.link",
-      "github": "demos en lineas:/nk"
+      "url": "https://github.com/Mai1203/03-heroes-app",
+      "github": "https://github.com/Mai1203/03-heroes-app"
+    },
+    {
+      "name": "Api-games",
+      "isActive": true,
+      "description": "Aplicación web para el consumo de la API",
+      "highlights": [
+        "Vite",
+        "API",
+        "React"
+      ],
+      "url": "https://github.com/Mai1203/api-games",
+      "github": "https://github.com/Mai1203/api-games"
+    },
+    {
+      "name": "Sistema de ventas",
+      "isActive": true,
+      "description": "Software programado en Java, conectado a bases de datos con sistema de verificación de cuentas, y cifrado de contraseñas",
+      "highlights": [
+        "JAVA",
+        "Bases de Datos",
+        "Cifrado de contraseñas"
+      ],
+      "url": "https://github.com/Mai1203/Sistema_venta",
+      "github": "https://github.com/Mai1203/Sistema_venta"
+    },
+    {
+      "name": "Chat-gpt",
+      "isActive": true,
+      "description": "Aplicación web para el consumo de la API 'chatGPT', Creando un chatbot con GPT-3.5",
+      "highlights": [
+        "IA",
+        "API",
+        "React"
+      ],
+      "url": "https://github.com/Mai1203/Chat-gpt",
+      "github": "https://github.com/Mai1203/Chat-gpt"
     }
   ]
 }
