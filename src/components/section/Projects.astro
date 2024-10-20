@@ -12,7 +12,7 @@ import { projects } from "@/cv.json";
             <article>
               <header>
                 <h3>
-                  <a href={url} title={`ver proyecto ${name}`}>
+                  <a href={url} title={`ver proyecto ${name}`} target="_blank">
                     {name}
                   </a>
                   {isActive && <span>&bull;</span>}
@@ -49,7 +49,7 @@ import { projects } from "@/cv.json";
     padding: 14px;
     height: 100%;
     transition: transform 0.3s;
-    box-shadow: -5px 5px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.75);
   }
 
   article:hover {
