@@ -4,7 +4,7 @@
 
 <header>
 	<nav>
-		<a href='/' aria-label='Brand'>resume</a>
+		<a href='/' aria-label='Brand'>Portafolio</a>
 
 		<div>
 			<a
@@ -18,43 +18,68 @@
 				>Tools
 			</a>
 
-			<button
-				id='toggleDarkMode'
-			>
-				<span class='sr-only'>Dark Theme</span>
-				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					width='32'
-					height='32'
-					viewBox='0 0 24 24'
-					><path
-						fill='currentColor'
-						d='M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12'
-					></path></svg
-				>
-				<svg
-					xmlns='http://www.w3.org/2000/svg'
-					width='32'
-					height='32'
-					viewBox='0 0 24 24'
-					><path
-						fill='currentColor'
-						d='M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20'
-					></path></svg
-				>
-			</button>
+			<button id="toggleDarkMode">
+        <!-- <span class="sr-only">Theme </span> -->
+        <svg
+          id="icon-sun"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15m0 1q-1.671 0-2.836-1.164T8 12q0-1.671 1.164-2.836T12 8q1.671 0 2.836 1.164T16 12q0 1.671-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.744l2.111 2.134zM18.72 19.438l-2.117-2.14l.652-.702l2.16 2.098zM16.596 6.746l2.098-2.16l.744.695l-2.134 2.111zM4.562 18.72l2.14-2.117l.663.652l-2.078 2.179zM12 12"
+          ></path>
+        </svg>
+        <svg
+          id="icon-moon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          class="hidden"
+        >
+          <path
+            fill="currentColor"
+            d="M12.058 20q-3.334 0-5.667-2.333Q4.058 15.333 4.058 12q0-3.038 1.98-5.27Q8.02 4.5 10.942 4.097q.081 0 .159.006t.153.017q-.506.706-.801 1.57q-.295.865-.295 1.811q0 2.667 1.866 4.533q1.867 1.867 4.534 1.867q.952 0 1.813-.295q.862-.295 1.548-.801q.012.075.018.153q.005.078.005.158q-.384 2.923-2.615 4.904T12.057 20"
+          ></path>
+        </svg>
+      </button>
 		</div>
 	</nav>
 </header>
 
+<script>
+  const toggleDarkMode = document.getElementById('toggleDarkMode');
+  const iconSun = document.getElementById('icon-sun');
+  const iconMoon = document.getElementById('icon-moon');
+
+  toggleDarkMode.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    
+    if (isDarkMode) {
+      iconSun.classList.add('hidden');
+      iconMoon.classList.remove('hidden');
+    } else {
+      iconSun.classList.remove('hidden');
+      iconMoon.classList.add('hidden');
+    }
+  });
+</script>
+
 <style>
 	header {
+    margin-top: 20px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px 10px 23px 0px rgba(0,0,0,0.75);
   padding: 1rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-radius: 10px;
 }
 
 /* Navbar */
@@ -86,25 +111,29 @@ nav div {
 }
 
 /* Botón de modo oscuro */
+.hidden {
+  display: none;
+}
+
 button#toggleDarkMode {
-  background: none;
-  border: none;
-  cursor: pointer;
   margin-left: 1rem;
   display: flex;
   align-items: center;
-  transition: transform 0.2s;
-}
-
-button#toggleDarkMode:hover {
-  transform: scale(1.1);
+  background: none !important;
+  border: none !important;
 }
 
 button#toggleDarkMode svg {
-  fill: #333;
-  transition: fill 0.3s;
+  cursor: pointer;
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 2px;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
+button#toggleDarkMode:hover svg {
+  transform: scale(1.1);
+}
 /* Versión para modo oscuro */
 body.dark-mode {
   background-color: #1a1a1a;
@@ -123,6 +152,9 @@ body.dark-mode button#toggleDarkMode svg {
   fill: #f4f4f4;
 }
 
+body.dark-mode button#toggleDarkMode {
+  color: white;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   nav {

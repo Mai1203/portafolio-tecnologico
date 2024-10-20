@@ -1,0 +1,286 @@
+{
+  "basics": {
+    "name": "Michael Stiven Coral Bravo",
+    "label": "Computer Engineering Student",
+    "image": "https://avatars.githubusercontent.com/u/83738249?s=400&u=3248eda8c78c4491a43650feffdd823372776469&v=4",
+    "email": "maicolcoralbravo@gmail.com",
+    "phone": "+57 3229443506",
+    "url": "https://datasoftcolll.com",
+    "summary": "Soy un apasionado en desarrollo de software con una solida formación en tecnología en análisis y desarrollo de sistemas de información. Soy estudiante de la carrera de Ingeniería informática, mi experiencia y habilidades obtenidas de mi universidad abarcan diversas áreas clave, lo que me permite ser un recurso versátil y valioso en proyectos de software.",
+    "location": {
+      "address": "Nariño city",
+      "postalCode": "32002",
+      "city": "Linares-Nariño",
+      "countryCode": "ES",
+      "region": " Colombia"
+    },
+    "profiles": [
+      {
+        "network": "X",
+        "username": "Maicol Coral",
+        "url": "https://x.com/coral_maicol"
+      },
+      {
+        "network": "GitHub",
+        "username": "Mai1203",
+        "url": "https://github.com/Mai1203"
+      },
+      {
+        "network": "Whatsapp",
+        "username": "Maicol Coral",
+        "url": "https://wa.me/3229443506"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Maicol Coral",
+        "url": "www.linkedin.com/in/maicol-coral-3626a4251"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Desarrollo de un Software Sistema de Ventas",
+      "position": "Programación en Java",
+      "url": null,
+      "startDate": "2021-01-01",
+      "endDate": "2022-10-01",
+      "summary": "Aprendiz",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Corporación Universitaria Autónoma de Nariño",
+      "url": "https://www.aunar.edu.co/",
+      "area": "Ingeniero Informático",
+      "studyType": "Bachelor",
+      "startDate": "2020-02-01",
+      "endDate": null,
+      "score": "4.7",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Curso Desarrollo Web con HTML5, CSS3, JS AJAX PHP y MySQL",
+      "url": "https://www.udemy.com/",
+      "area": "Udemy",
+      "studyType": "Bachelor",
+      "startDate": "2024-02-01",
+      "endDate": null,
+      "score": "4.8",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "httpcom",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "nextjs-dashboard",
+      "isActive": true,
+      "description": "Proyecto de aprendizaje con Next.js",
+      "highlights": [
+        "Next.js",
+        "Aprendizaje"
+      ],
+      "url": "https:odes"
+    },
+    {
+      "name": "API_CRUD",
+      "isActive": true,
+      "description": "Proyecto de aprendizaje sobre las APIs y sus usos(CRUD), conectado a una base de datos",
+      "highlights": [
+        "API",
+        "MongoDB",
+        "CRUD"
+      ],
+      "url": "demos en linea"
+    },
+    {
+      "name": "Tienda",
+      "isActive": true,
+      "description": "Programa web para la base tienda de productos.",
+      "highlights": [
+        "Node.js",
+        "tienda"
+      ],
+      "url": "demos en lineas://proyetosdesarrollo.dev"
+    },
+    {
+      "name": "heroes-app",
+      "isActive": true,
+      "description": "Aplicación web para el consumo de la API 'superHeroAPI', separando heroes de DC y Marvel",
+      "highlights": [
+        "Vite",
+        "API",
+        "React"
+      ],
+      "url": "demos en lineas://codi.link",
+      "github": "demos en lineas:/nk"
+    }
+  ]
+}
